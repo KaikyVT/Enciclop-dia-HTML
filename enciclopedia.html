@@ -233,6 +233,50 @@
         &lt;br&gt;
     </pre>
 
+    <h2>Imagens</h2>
+
+    <h3>Imagem(&lt;img&gt;)</h3>
+    <p>Adicionar imagens é útil para que se coloque uma imagem na página. Podendo colocar imagens diversas para personalizar o seu site! A tag &lt;img&gt; possui duas características dentro de si, que serão descritas abaixo. Aqui uma imagem padrão apenas para demonstrar:</p>
+    <img width="100" src="imagens/download.jfif" alt="Joinha">
+
+    <h4>Fonte da Imagem(scr)</h4>
+    <p>Dentro da tag &lt;img&gt; há uma parte que diz "src", se referindo ao termo em inglês "Source" (Fonte). Mais especificamente, estará da seguinte forma:
+    </p>
+    <code>scr=""</code>
+    <p>Dentro das aspas você deve colocar a fonte da imagem. Você pode baixar a imagem, colocar na mesma pasta que seu arquivo HTML e utilizá-la referenciando no src, dessa forma:</p>
+    <code>src="imagens/imagemgenerica.png"</code>
+    <p>Porém você pode também utilizar URLs (links), então podendo usar imagens sem necessitar de downloads. Aqui há mais um exemplo:</p>
+    <code>src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.techtudo.com.br%2Flistas%2F2023%2F08%2Finteligencia-artificial-que-cria-imagens-com-palavras-veja-8-opcoes-gratis-edsoftwares.ghtml&psig=AOvVaw21KUzR9-9NhlZIhczvXV6q&ust=1708903591276000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKiVqpiRxYQDFQAAAAAdAAAAABAE"</code>
+
+    <h4>Texto Alternativo(alt)</h4>
+    <p>Dentro da tag &lt;img&gt; também há o texto "alt", se referindo ao termo em inglês "Alternative" (Alternativo), se referindo a um texto que apareça caso a imagem utilizada não seja encontrada, seja por a URL estar incorreta ou inválida, ou por diretório incorreto. Um exemplo abaixo de imagem com erro para que você possa ler o texto alternativo:</p>
+    <img src="testestesrteasfsaffafsa.com.br" alt="Olha o texto aqui :D">
+    <p>Observe o pequeno símbolo de imagem à esquerda do texto! Isso significa que há um problema com sua imagem.</p>
+    <p>O atributo alt aparece da seguinte forma:</p>
+    <code>alt=""</code>
+    <p>E caso queira colocar o texto alternativo, ele deve ficar entre as aspas, da seguinte forma:</p>
+    <code>alt="Texto alternativo!!"</code>
+
+    <h4>Tamanho(width e height)</h4>
+    <p>Os atributos width e height não aparecem por padrão na tag &lt;img&gt;, tendo que ser adicionadas, de tal forma:</p>
+    <code>&lt;img width="" height="" src="" alt=""&gt;</code>
+    <p>Width representa a "largura" da imagem, e height a "altura", podendo você colocar o tamanho da imagem dentre as aspas, de tal forma:.</p>
+    <code>&lt;img width="200" height="200" src="" alt=""&gt;</code> -> Imagem proporcional (width e height iguais)
+    <br><br>
+    <code>&lt;img width="200" height="400" src="" alt=""&gt;</code> -> Imagem não proporcional (height > width)
+    <br><br>
+    <code>&lt;img width="400" height="200" src="" alt=""&gt;</code> -> Imagem não proporcional (width > height)
+    <p><strong>Dica:</strong> Você pode ampliar ou reduzir imagens de forma proporcional sem utilizar ambos os atributos width e height! Basta utilizar apenas um deles, que automaticamente a imagem será formatada proporcionalmente! Exemplo:</p>
+    <code>&lt;img width="200" src="imagens/imagem.png" alt="imagem genérica"&gt;</code> -> Imagem proporcional (apenas width)
+    <p>Exemplo na prática (redimensionando a imagem para 50 pixels utilizando apenas width):</p>
+    <img width="50px" src="imagens/download.jfif" alt="o mesmo emoji lá de cima">
+    <p><strong>Adendo:</strong> não importa a ordem em que você coloca os atributos da tag. Você pode colocar width antes de src, pode colocar entre src e alt, pode colocar depois... Não importa, desde que tudo esteja dentro da tag de abertura &lt;img&gt;, que deve ser fechada com &lt;/img&gt;</p>
+
+    <h3>Vídeos</h3>
+
+    <h4>Vídeos(&lt;video&gt;)</h4>
+    <p><u>Vou estudar mais essa tag antes de anotar tudo, ainda não sei o suficiente!</u></p>
+
     
 </body>
 
