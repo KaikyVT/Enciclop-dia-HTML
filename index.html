@@ -1,12 +1,19 @@
 <html>
 
 <head>
-    <title>Enciclopédia!</title>
+    <title>Teste!</title>
+    <link rel="stylesheet" href="enciclopedia.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Madimi+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Madimi+One&display=swap');
+    </style>
 </head>
 
 <body>
-    <h1>Oi!</h1>
-    <p>Bem vindo(a) ao meu teste. Comecei a fazer isso no meio do <strong>shopping</strong>, já que não tenho nada melhor pra
+    <h1>Enciclopédia não-oficial HTML!</h1>
+    <p>Bem vindo(a) ao meu teste. Comecei a fazer isso no meio do <strong>shopping</strong>, já que não tinha nada melhor pra
         fazer. Aqui eu vou colocar tudo o que eu aprendi, desde texto (como esse) até imagens e afins!
     </p>
 
@@ -45,7 +52,7 @@
 
     <h4>Quebrar Linha Específica(&lt;wbr&gt;)</h4>
     <p>Essa tag é útil quando há uma palavra muito grande, que você deseja quebrar em uma parte específica. Para ver o exemplo, talvez seja necessário reduzir um pouco o zoom do seu navegador (caso não saiba fazer isso, segure ctrl e enquanto segura, mova o scroll do mouse para trás)</p>
-    Essapalavraémuitomuitomuitomuitomuitomuitomuitomuitomuitomuitomuitomuitomuuuuuuuuuuuuuuuuitograndemesmotipomuitogrande<wbr>eeupossoquebrarapalavraemmomentosespecificoscomoporexemploseeuquiserquebrarnessaparte<wbr>aquieupossocasoutilizeatagcitadaqueé&lt;wbr&gt;.
+    <p>Essapalavraémuitomuitomuitomuitomuitomuitomuitomuitomuitomuitomuitomuitomuuuuuuuuuuuuuuuuitograndemesmotipomuitogrande<wbr>eeupossoquebrarapalavraemmomentosespecificoscomoporexemploseeuquiserquebrarnessaparte<wbr>aquieupossocasoutilizeatagcitadaqueé&lt;wbr&gt;.</p>
 
     <h3>Linha Horizontal(&lt;hr&gt;)</h3>
     <p>A linha horizontal serve somente para separar parágrafos com uma linha reta.</p>
@@ -153,9 +160,9 @@
         questão deve estar entre &lt;code&gt; e &lt;/code&gt;. Exemplos:
     </p>
     <ul>
-        <li><code>print('Olá, mundo!')</code></li>
+        <li><code>print ('Olá, mundo!')</code></li>
         <li><code>&lt;code&gt;Bem vindo ao Brasil!&lt;/code&gt;</code></li>
-        <li><code>System.alt.println(Olá, mundo!);</code></li>
+        <li><code>System.alt.println (Olá, mundo!);</code></li>
     </ul>
 
     <h4>Descrição(&lt;dl&gt;, &lt;dt&gt; e &lt;dd&gt;)</h4>
@@ -186,6 +193,7 @@
         <p>A <abbr title="Universidade Vila Velha">UVV</abbr> É famosa no estado do Espírito Santo como uma Universidade
             de qualidade.</p>
     </details>
+
     <details>
         <summary>
             HTML
@@ -193,27 +201,19 @@
         <p><abbr title="HyperTexr Markup Language">HTML</abbr> é uma linguagem de marcação, como diz seu nome. Utilizada
             para estruturar páginas na web, utilizando da semântica como guia para sua utilização.</p>
     </details>
+
     <details>
         <summary>Abrantes</summary>
         <p>Abrantes é conhecido como um professor que cobra muito de seus alunos. Ele possui graduação em medicina, mas acabou largando a área rumando a Ciência da Computação. Apesar de sua fama de carrasco, Abrantes aparenta ser uma boa pessoa.</p>
     </details>
-    <h4>Diálogo(&lt;dialogue&gt;)</h4>
-    <p>Textos em forma de diálogo servem para gerar um foco específico no texto. Sinceramente não vejo tanta utilidade, muito menos isso sendo utilizado em sites. Pelo menos não sem uma melhoria em CSS e JavaScript. A tag &lt;dialogue&gt; se refere ao termo em inglês "Dialogue" (Diálogo). A tag deve ser aberta utilizando &lt;dialogue open&gt; e deve ser fechada utilizando &lt;/dialogue&gt;. Exemplos:</p>
+    <h4>Diálogo(&lt;dialog&gt;)</h4>
+    <p>Textos em forma de diálogo servem para gerar um foco específico no texto. Sinceramente não vejo tanta utilidade, muito menos isso sendo utilizado em sites. Pelo menos não sem uma melhoria em CSS e JavaScript. A tag &lt;dialog&gt; se refere ao termo em inglês "Dialogue" (Diálogo). A tag deve ser aberta utilizando &lt;dialog&gt; e deve ser fechada utilizando &lt;/dialog&gt;. Exemplos:</p>
     <dialog open>Isso é uma caixa de diálogo</dialog>
     <br><br><br><br>
     <dialog open>Como disse, não vejo uma grande utilidade para essa tag</dialog>
     <br><br><br><br>
-    <dialog open>E para fazer com que elas fiquem uma abaixo da outra eu tive que fazer uma gambiarra com várias tags &lt;br&gt;</dialog>
+    <dialog open>E para fazer com que elas fiquem uma abaixo da outra eu tive que fazer uma gambiarra com várias tags br</dialog>
     <br><br><br><br>
-    <h4>Rodapé(&lt;footer&gt;)</h4>
-    <p>Textos em rodapé são ideais para colocar informações de contato ou alguns daqueles textos obrigatórios que ninguém lê. a tag &lt;footer&gt; representa o termo em inglês "Footer" (Rodapé). Exemplo:</p>
-    <footer>
-        <p>Autor: Kaiky Viglioni</p>
-        <a href="https://www.instagram.com/kaikyvtmoura/">Meu insta</a> (segue la, posto quase nada, mas respondo mensagem :D)</p>
-    </footer>
-    
-    <h4>Cabeçalho(&lt;header&gt;)</h4>
-    <p>É a mesma coisa que o &lt;footer&gt;, mas no  topo da página. Não darei exemplos porque é a mesma ideia.</p>
 
     <h4>Marcação(&lt;mark&gt;)</h4>
     <p>Textos marcados servem para destacar um elemento. Se assemelha muito ao uso de um marca texto. A tag &lt;mark&gt; se refere ao termo em inglês "Mark" (Marcação). Exemplo:</p>
@@ -270,108 +270,7 @@
     <code>&lt;img width="200" src="imagens/imagem.png" alt="imagem genérica"&gt;</code> -> Imagem proporcional (apenas width)
     <p>Exemplo na prática (redimensionando a imagem para 50 pixels utilizando apenas width):</p>
     <img width="50px" src="imagens/download.jfif" alt="o mesmo emoji lá de cima">
-    <p><strong>Adendo:</strong> não importa a ordem em que você coloca os atributos da tag. Você pode colocar width antes de src, pode colocar entre src e alt, pode colocar depois... Não importa, desde que tudo esteja dentro da tag de abertura &lt;img&gt;, que deve ser fechada com  símbolo &gt;</p>
-
-    <h3>Tabelas(&lt;table&gt;)</h3>
-    <p>Uma tabela é feita com diversas tags, mas, parando para pensar... Por que não explicar sobre tabelas utilizando uma tabela? :&rpar;</p>
-    <table border="2px">
-        <caption>Tabela sobre Tabela</caption>
-        <thead>
-            <th>Tag/Atributo</th>
-            <th>Significado da Tag</th>
-            <th>Função</th>
-            <th>Possui abertura e fechamento?</th>
-            <th>Observação</th>
-            <th>Exemplo</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>&lt;table&gt;</td>
-                <td>"Tabela" em inglês</td>
-                <td>Cria uma tabela</td>
-                <td>Sim</td>
-                <td>---</td>
-                <td><strong>&lt;table&gt;</strong><br> (imagina várias tags aqui) <br><strong>&lt;/table&gt;</strong></td>
-            </tr>
-            <tr>
-                <td>&lt;caption&gt;</td>
-                <td>"Legenda" em inglês</td>
-                <td>Cria um título que explica sobre a tabela <br> (No caso dessa tabela, a caption é <br> "Tabela sobre Tabela")</td>
-                <td>Sim</td>
-                <td>Fica dentro da tag <br> &lt;table&gt;<br><br>É uma tag opcional</td>
-                <td>&lt;table&gt;<br><strong>&lt;caption&gt;</strong>Título<strong>&lt;/caption&gt;</strong><br>(imagina várias tags aqui)<br>&lt;/table&gt;</td>
-            </tr>
-            <tr>
-                <td>&lt;thead&gt;</td>
-                <td>"Cabeça da tabela" <br> em inglês</td>
-                <td>Cria a separação onde ficarão <br> os títulos das colunas da tabela</td>
-                <td>Sim</td>
-                <td>Fica dentro da Tag <br>&lt;table&gt;</td>
-                <td><strong>&lt;thead&gt;</strong><br>&lt;th&gt;título&lt;/th&gt;<br><strong>&lt;/thead&gt;</strong></td>
-            </tr>
-            <tr>
-                <td>&lt;th&gt;</td>
-                <td>Abreviação para <br> "Cabeçalho da tabela" <br>em inglês*</td>
-                <td>Utilizada para colocar um título de uma coluna</td>
-                <td>Sim</td>
-                <td>Fica dentro da Tag <br>&lt;thead&gt;</td>
-                <td>&lt;thead&gt;<br><strong>&lt;th&gt;</strong>títulos<strong>&lt;/th&gt;</strong><br>&lt;/thead&gt;</td>
-            </tr>
-            <tr>
-                <td>&lt;tbody&gt;</td>
-                <td>Abreviação para <br> "Corpo da tabela" <br> em inglês</td>
-                <td>Cria a separação onde ficarão <br> os dados da tabela</td>
-                <td>Sim</td>
-                <td>Fica dentro da Tag <br>&lt;table&gt;</td>
-                <td><strong>&lt;tbody&gt;</strong><br>&lt;tr&gt;<br>&lt;td&gt;Dado001&lt;/td&gt;<br>&lt;/tr&gt;<br><strong>&lt;/tbody&gt;</strong></td>
-            </tr>
-            <tr>
-                <td>&lt;tr&gt;</td>
-                <td>Abreviação para <br>"Linha da tabela" <br> em inglês</td>
-                <td>Cria uma linha onde os dados serão armazenados</td>
-                <td>Sim</td>
-                <td>Fica dentro da Tag <br>&lt;tbody&gt;</td>
-                <td>&lt;tbody&gt;<br><strong>&lt;tr&gt;</strong><br>&lt;td&gt;Dado001&lt;/td&gt;<br><strong>&lt;/tr&gt;</strong><br>&lt;/tbody&gt;</td>
-            </tr>
-            <tr>
-                <td>&lt;td&gt;</td>
-                <td>Abreviação para <br> "Divisão da tabela" <br>em inglês*</td>
-                <td>Cria as secções que interligam linha e coluna</td>
-                <td>Sim</td>
-                <td>Fica dentro da tag <br>&lt;tr&gt;<br><br>Dados dentro de &lt;td&gt;<br>devem ser colocados <br>na ordem dos elementos <br>que estâo em &lt;th&gt;</td>
-                <td>&lt;tbody&gt;<br>&lt;tr&gt;<br><strong>&lt;td&gt;</strong>Dado001<strong>&lt;/td&gt;</strong><br>&lt;/tr&gt;<br>&lt;/tbody&gt;</td>
-            </tr>
-            <tr>
-                <td>&lt;tfoot&gt;</td>
-                <td>Abreviação para <br>"Rodapé da tabela" <br> em inglês</td>
-                <td>Cria o rodapé da tabela (DUH)</td>
-                <td>Sim</td>
-                <td>Fica dentro da Tag <br>&lt;table&gt;<br></td>
-                <td><strong>&lt;tfoot&gt;</strong><br>&lt;td&gt;Rodapé legal :D&lt;/td&gt;<br><strong>&lt;/tfoot&gt;</strong></td>
-            </tr>
-            <tr>
-                <td>colspan</td>
-                <td>Abreviação para<br>"Espaço de coluna" <br> em inglês*</td>
-                <td>Faz uma parte da tabela ocupar mais de uma coluna</td>
-                <td>Não</td>
-                <td>Fica dentre os sinais &lt;&gt;<br> da tag</td>
-                <td>&lt;td <strong>colspan="6"</strong>&gt;<br> Parte da tabela que ocupa 6 colunas <br>&lt;/td&gt;</td>
-            </tr>
-            <tr>
-                <td>rowspan</td>
-                <td>Abreviação para <br>"Espaço de linha" <br> em inglês*</td>
-                <td>Faz uma parte da tabela ocupar mais de uma linha</td>
-                <td>Não</td>
-                <td>Fica dentre os sinais &lt;&gt;<br> da tag</td>
-                <td>&lt;td <strong>rowspan="6"</strong>&gt;<br> parte da tabela que ocupa 6 linhas <br>&lt;/td&gt;</td>
-            </tr>
-        </tbody>
-
-        <tfoot>
-            <td colspan="6">* A tradução pode não ser exatamente essa, foi um significado próximo do sentido da tag que consegui encontrar</td>
-        </tfoot>
-    </table>
-
+    <p><strong>Adendo:</strong> não importa a ordem em que você coloca os atributos da tag. Você pode colocar width antes de src, pode colocar entre src e alt, pode colocar depois... Não importa, desde que tudo esteja dentro da tag de abertura &lt;img&gt;, que deve ser fechada com &lt;/img&gt;</p>
 
     <h3>Vídeos</h3>
 
